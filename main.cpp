@@ -7,15 +7,11 @@ int main(){
   cout<<"Hello World\n";
   cout<<"Here is a basic calculator\n";
   cout<<"Add or Subtract?\n";
-  cin>>method<<endl;
-  while(method != "Add" || method != "Subtract" ||method != "add" || method != "subtract"){
-    cout<<"Please specify Add or Subtract.\n";
-    cin>>method<<endl;
-  }
+  cin>>method;
   cout<<"What first number?\n";
-  cin>>firstnum<<endl;
+  cin>>firstnum;
   cout<<method<<"ed to\n";
-  cin>>secnum<<endl;
+  cin>>secnum;
   if(method == "Add" || method == "add"){
     cout<<"Adding "<<firstnum<<" to "<<secnum<<endl;
     result = firstnum + secnum;  
@@ -24,6 +20,7 @@ int main(){
     result = firstnum - secnum;    
   }else{
     cout<<"Error unknown method\n";
+    return 0;
   }
   cout<<"Your result is "<<result<<endl;
   cout<<"Exiting...\n";
