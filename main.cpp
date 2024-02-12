@@ -16,18 +16,15 @@ int main(){
   cin>>firstnum<<endl;
   cout<<method<<"ed to\n";
   cin>>secnum<<endl;
-  switch(method):
-    case 'Add' || 'add':
-      cout<<"Adding "<<firstnum<<" to "<<secnum<<endl;
-      result = firstnum + secnum;
-      break;
-    case 'Subtract' || 'subtract':
-      cout<<"Subtracting "<<firstnum<<" with "<<secnum<<endl;
-      result = firstnum - secnum;
-      break;
-    default:
-      cout<<"Error unknown method\n";
-      break;
+  if(method == "Add" || method == "add"){
+    cout<<"Adding "<<firstnum<<" to "<<secnum<<endl;
+    result = firstnum + secnum;  
+  }else if(method == "subtract" || method == "Subtract"){
+    cout<<"Subtracting "<<firstnum<<" with "<<secnum<<endl;
+    result = firstnum - secnum;    
+  }else{
+    cout<<"Error unknown method\n";
+  }
   cout<<"Your result is "<<result<<endl;
   cout<<"Exiting...\n";
   return 0;
